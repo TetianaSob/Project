@@ -1,0 +1,477 @@
+@import url('https://fonts.googleapis.com/css?family=Lato|Merriweather|Open+Sans|Raleway|Source+Sans+Pro');
+/* You must use a DIFFERENT FONT THAT THIS ONE as your webfont ---I have changed Roboto to Open Sans*/
+
+/*************************************************
+            DEFAULTS
+*************************************************/
+body{
+    padding: 0rem;
+    margin: 0rem;
+    box-sizing: border-box;
+}
+/* *::after,
+*::before{
+    box-sizing: inherit;
+} */
+html{
+    font-family: 'Open Sans', sans-serif;
+    /* change this font stack to your own choices --- I changed font stack to Open Sans*/
+    line-height: 1.2;
+}
+p{
+  font-family: 'Lato', serif;
+  font-size: 16px;
+  float: right;
+  margin: 0rem;
+}
+/* a{
+
+}
+ul{
+
+}
+ol{
+
+}
+li{
+font-family: 'Merriweather', serif;
+
+}
+img{
+    width: 25%;
+} */
+
+/*************************************************
+            HEADER
+*************************************************/
+header{
+    padding-left:2rem;
+    padding-top: 3rem;
+    padding-bottom: 5rem;
+    color: #d3d3d3;
+    font-family: 'Merriweather', serif;
+    /* position: relative; */
+    width:100%;
+    background-image: url("../Img/main_image.jpg");
+    background-repeat: no-repeat;
+    background-size: 1925px 470px;
+    margin: 0;
+    }
+
+.header h1{
+color: #d3d3d3;
+font-size: 40px;
+font-family: 'Merriweather', serif;
+text-shadow: 1.5px 1.5px #303030;
+}
+
+.header h2{
+  color: #999999;
+  font-size: 30px;
+font-family: 'Merriweather', serif;
+text-shadow: 2.5px 2.5px #303030;
+}
+
+/*************************************************
+            NAVMENU
+*************************************************/
+/*
+nav{
+    padding:1rem 1rem;
+font-family: 'Source Sans Pro', sans-serif;
+}
+nav > a,
+nav > a:visited,
+nav > a:link{
+
+}
+nav > a:active,
+nav > a:focus,
+nav > a:hover{
+}
+
+ */
+
+
+nav{
+  background-color: #d3d3d3;
+  justify-content: flex-start;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 100%;
+  display: flex;
+  padding-left: 2rem;
+}
+
+nav a {
+      color: #191919;
+      text-decoration: none;
+      text-transform: uppercase;
+      font-size: 16px;
+      padding: 1rem 1rem;
+     padding-right: 6rem;
+     justify-content: flex-start;
+     max-width: 20%;
+     font-family: 'Open Sans', sans-serif;
+     text-align: center;
+     text-decoration: underline;
+}
+
+/* padding: 1rem 4rem;
+justify-content: flex-start; */
+
+/* visited link
+
+a:visited {
+    color: #64a356;
+}
+
+selected link
+a:active {
+    color: #64a356;
+}
+*/
+
+nav a:hover {
+    background-color: #303030;
+    color: #d3d3d3;
+
+}
+
+
+/*************************************************
+            MAIN CONTENT
+*************************************************/
+main{
+    padding: 1rem 1rem;
+}
+
+
+section h1, h2{
+  color: #191919;
+  text-decoration: none;
+  text-transform: uppercase;
+ justify-content: flex-start;
+ max-width: 100%;
+ font-family: 'Merriweather', serif;
+ text-shadow: 1.5px 1.5px #d3d3d3;
+ margin: 0.5rem;
+}
+
+.first {
+  width: 92%;
+  padding: 1rem;
+}
+
+.second{
+  width: 45%;
+  float: left;
+  padding: 1rem;
+}
+
+.third{
+  grid-area: right;
+  width: 45%;
+ padding: 1rem;
+}
+
+
+
+section p img{
+  width: 100%;
+}
+
+/*************************************************
+            FOOTER
+*************************************************/
+footer{
+    font-family: 'Open Sans', sans-serif;
+    background-color: #d3d3d3;
+    width: 100%;
+    grid-gap: 2rem;
+    display: flex;
+    flex-direction: row;
+    text-align: left;
+}
+
+.docs {
+float: left;
+float: top;
+
+}
+
+.channels {
+float: top;
+}
+
+.foot section{
+padding: 2rem;
+padding-right: 8%;
+}
+
+
+.foot dl{
+  align-items: flex-start;
+}
+.foot dt{
+font-size: 30px;
+font-family: 'Open Sans';
+text-align: left;
+}
+.foot dd{
+text-align: left;
+padding left: 0rem;
+margin-inline-start: 0px;
+}
+.foot dd a{
+  font-size: 16px;
+  font-family: 'Lato', serif;
+  padding: 0rem;
+}
+
+
+
+.foot dd a:hover{
+background-color: #303030;
+justify-content: flex-start;
+}
+
+#name{
+  width: 100%;
+  font-size: 16px;
+}
+
+#name:hover{
+background-color: #d3d3d3;
+}
+
+#email{
+  width: 70%;
+  float: left;
+  font-size: 16px;
+}
+
+#email:hover{
+background-color: #d3d3d3;
+
+}
+
+#city{
+  width: 28%;
+   float: right;
+  font-size: 16px;
+}
+
+#city:hover{
+background-color: #d3d3d3;
+}
+
+#comment{
+  width: 100%;
+  float: left;
+  height: 7rem;
+  font-size: 16px;
+}
+
+#comment:hover{
+background-color: #d3d3d3;
+}
+
+.form-box{
+    font-size: 16px;
+}
+
+#btnSend{
+  float: right;
+font-size: 16px;
+  }
+
+#btnSend:hover{
+background-color: #d3d3d3;
+}
+
+/*************************************************
+            MEDIA QUERIES for layout
+*************************************************/
+
+/* media (max-width: 599px) */
+@media (max-width: 599px){
+  h1::after {
+    content: "< 599px";
+  }
+
+  .flex-row .card {
+    width: 42vw;
+  }
+
+  nav{
+    justify-content: flex-start;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+  }
+    nav a{
+          border-bottom: 1px solid #191919;
+           max-width: 100%;
+           width: 100%;
+    }
+
+  main{
+    flex-direction: column;
+  }
+
+  .second{
+    width: 92%;
+    float: left;
+    padding: 1rem;
+    /* flex-direction: row;*/
+  }
+
+  .third{
+    grid-area: left;
+    width: 92%;
+   padding: 1rem;
+}
+   footer{
+       display: flex;
+       flex-direction: column;
+       width: 100%;
+     }
+
+
+.foot nav{
+width: 100%;
+flex-direction: row;
+}
+
+.foot section{
+width: 90%;
+max-width: 90%;
+}
+
+.docs {
+width: 50%;
+float: left;
+}
+
+.channels {
+width: 50%;
+
+}
+
+.wrapper {
+  grid-template columns: 1fr 5fr;
+  grid-template-rows: minmax(100px; 2fr) 7fr 1fr;
+}
+}
+
+
+/* media (min-width: 600px) and (max-width:999px) */
+@media (min-width: 600px) and (max-width:999px){
+  h1::after {
+    content: "< 1000px";
+  }
+  .flex-row .card {
+    width: 22vw;
+  }
+
+  nav{
+    justify-content: flex-start;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+  }
+    nav a{
+          border-bottom: 1px solid #191919;
+           max-width: 100%;
+           width: 100%;
+    }
+
+  footer{
+      display: flex;
+      flex-direction: column;
+    }
+
+    .foot nav{
+    width: 100%;
+    flex-direction: row;
+    }
+
+    .foot section{
+    width: 90%;
+    padding: 2rem;
+    padding-right: 8%;
+    float: right;
+    }
+
+    section{
+    display:grid;
+    grid-gap: 2rem;
+    }
+
+    .second{
+      width: 92%;
+      float: left;
+      padding: 1rem;
+      /* flex-direction: row;*/
+    }
+
+    .third{
+      grid-area: left;
+      width: 92%;
+     padding: 1rem;
+  }
+}
+
+
+
+.wrapper {
+  grid-template columns: 1fr 1fr 1fr;
+
+}
+
+@media (min-width: 1000px){
+  h1::after {
+    content: "> 1000px";
+  }
+  .flex-row .card {
+    width: 22vw;
+  }
+}
+
+.foot nav{
+width: 100%;
+}
+.foot section{
+width: 90%;
+padding: 2rem;
+padding-right: 8%;
+float: right;
+}
+
+section{
+display:grid;
+margin: 0rem;
+}
+
+.docs {
+width: 50%;
+float: left;
+}
+
+.channels {
+width: 50%;
+
+}
+
+.wrapper {
+  grid-template-columns: repeat(4, 1fr);
+
+}
+}
